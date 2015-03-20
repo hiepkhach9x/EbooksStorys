@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_Item_new_Ebooks"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/imgNewStory"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_weight="30"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_margin="@dimen/magin_Text_new_Ebooks"
+        android:layout_weight="70"
+        android:weightSum="10"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvnameBook"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="@dimen/magin_Text_Bottom_new_Ebooks"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textStyle="bold|italic" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/magin_Text_Bottom_new_Ebooks"
+            android:layout_weight="4"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvAuthorBook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:text="@string/Author" />
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="wrap_content"
+                android:background="@color/dark_grey" />
+
+            <TextView
+                android:id="@+id/tvpublishedBook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:text="@string/published" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvDescriptionBook"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:text="@string/description" />
+    </LinearLayout>
+
+</LinearLayout>

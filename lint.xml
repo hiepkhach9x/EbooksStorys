@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ClickableViewAccessibility" severity="ignore" />
+    <issue id="DefaultLocale" severity="ignore" />
+    <issue id="HandlerLeak" severity="ignore" />
+    <issue id="InflateParams" severity="ignore" />
+    <issue id="InlinedApi" severity="ignore" />
+    <issue id="NewApi" severity="ignore" />
+    <issue id="RtlHardcoded">
+        <ignore path="res/layout/change_css.xml" />
+    </issue>
+    <issue id="SetJavaScriptEnabled" severity="ignore" />
+</lint>
